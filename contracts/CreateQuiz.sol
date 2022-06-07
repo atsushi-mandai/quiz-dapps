@@ -15,6 +15,7 @@ contract CreateQuiz is Ownable {
         string choice4;
         uint8 answer;
         uint8 languageCode;
+        //1:English, 2:Japanese
     }
 
     Quiz[] public quizzes;
