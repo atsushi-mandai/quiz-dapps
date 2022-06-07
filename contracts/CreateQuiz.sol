@@ -17,7 +17,7 @@ contract CreateQuiz is Ownable {
         uint8 languageCode;
     }
 
-    Quiz[] public quizzes;
+    Quiz[] internal quizzes;
 
     mapping (uint => bool) public quizzIsActive;
 
