@@ -14,11 +14,11 @@ contract ViewQuiz is CreateQuiz {
         string hint;
     }
 
-    function getQuiz(uint _quizId) public view returns (QuizQuestion memory) {
+    function getQuizQuestion(uint _quizId) public view returns (QuizQuestion memory) {
         Quiz memory quiz = quizzes[_quizId];
         return QuizQuestion(quiz.question, quiz.choice1, quiz.choice2, quiz.choice3, quiz.choice4, quiz.hint);
     }
 
-    
+
 
 }
