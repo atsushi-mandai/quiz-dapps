@@ -69,7 +69,7 @@
 						"type": "uint256"
 					}
 				],
-				"name": "getQuiz",
+				"name": "getQuizQuestion",
 				"outputs": [
 					{
 						"components": [
@@ -264,11 +264,11 @@
 			]
 		},
 		"contracts/ViewQuiz.sol": {
-			"keccak256": "0x31f44b9e1aebb0d02b27e06ad2d29da632f51012d150960222ef51eae301ec7a",
+			"keccak256": "0x3b835b1b92cf9c848608414b9929dedf9147b575d4c55e2fb8b4ffa22e872801",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://bf59eb8479262df8b09340fee7dd76c0638ff95293ed86b4800e9a7c394f9cb7",
-				"dweb:/ipfs/QmVUqazieapyTzdR7qUCDiKQn1SVgwKknMFHdM3dgvppM2"
+				"bzz-raw://6eb8bd6dc5fdf787879731c3603caebb33cff364185b7277dfade9c6b167c0aa",
+				"dweb:/ipfs/QmXMnNXnPNejKqQi3ToSWueGSwfUPsFFkEgPAmYj8Xpw3Y"
 			]
 		}
 	},
