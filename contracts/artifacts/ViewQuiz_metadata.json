@@ -44,6 +44,51 @@
 				"type": "event"
 			},
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "question",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "choice1",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "choice2",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "choice3",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "choice4",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "hint",
+								"type": "string"
+							}
+						],
+						"indexed": false,
+						"internalType": "struct ViewQuiz.QuizQuestion",
+						"name": "quizQuestion",
+						"type": "tuple"
+					}
+				],
+				"name": "ReturnQuizQuestion",
+				"type": "event"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "string",
@@ -106,6 +151,118 @@
 				],
 				"name": "changeQuizStatus",
 				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_quizId",
+						"type": "uint256"
+					}
+				],
+				"name": "getQuizForOwner",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "question",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "choice1",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "choice2",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "choice3",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "choice4",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "hint",
+								"type": "string"
+							},
+							{
+								"internalType": "uint8",
+								"name": "answer",
+								"type": "uint8"
+							},
+							{
+								"internalType": "uint8",
+								"name": "languageCode",
+								"type": "uint8"
+							}
+						],
+						"internalType": "struct CreateQuiz.Quiz",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_seed",
+						"type": "string"
+					}
+				],
+				"name": "getRandomQuizQuestion",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "question",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "choice1",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "choice2",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "choice3",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "choice4",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "hint",
+								"type": "string"
+							}
+						],
+						"internalType": "struct ViewQuiz.QuizQuestion",
+						"name": "",
+						"type": "tuple"
+					}
+				],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
@@ -222,7 +379,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/CreateQuiz.sol": "CreateQuiz"
+			"contracts/ViewQuiz.sol": "ViewQuiz"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -258,6 +415,14 @@
 			"urls": [
 				"bzz-raw://3789666515f95aea6d9d3ebdbc25d7434182ba5599a7c2823ddd51bc5b6a0174",
 				"dweb:/ipfs/QmSjW9pxWLnwqYKptEVQkxB8UWk99HuDGMZa6NjMBFoy5o"
+			]
+		},
+		"contracts/ViewQuiz.sol": {
+			"keccak256": "0x15094ca8d794065829c4e3a10689c82188be50d40feaa0c9da420a783ea39f7b",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://ed3d290277fa5993dfb57cb28649427369bf83b26c328cf654355795d4f790db",
+				"dweb:/ipfs/QmYAeAGxwkxiiFFT3i7CTT6webRsjeYHpqMvnd3xMExH1y"
 			]
 		}
 	},
