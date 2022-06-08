@@ -69,6 +69,67 @@
 						"type": "uint256"
 					}
 				],
+				"name": "getQuizForOwner",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "question",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "choice1",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "choice2",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "choice3",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "choice4",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "hint",
+								"type": "string"
+							},
+							{
+								"internalType": "uint8",
+								"name": "answer",
+								"type": "uint8"
+							},
+							{
+								"internalType": "uint8",
+								"name": "languageCode",
+								"type": "uint8"
+							}
+						],
+						"internalType": "struct CreateQuiz.Quiz",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_quizId",
+						"type": "uint256"
+					}
+				],
 				"name": "getQuizQuestion",
 				"outputs": [
 					{
@@ -264,11 +325,11 @@
 			]
 		},
 		"contracts/ViewQuiz.sol": {
-			"keccak256": "0x3b835b1b92cf9c848608414b9929dedf9147b575d4c55e2fb8b4ffa22e872801",
+			"keccak256": "0x5facf44c42ce49146ab082254c75558635a7749e40cabcb6ddad3941adbfe704",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://6eb8bd6dc5fdf787879731c3603caebb33cff364185b7277dfade9c6b167c0aa",
-				"dweb:/ipfs/QmXMnNXnPNejKqQi3ToSWueGSwfUPsFFkEgPAmYj8Xpw3Y"
+				"bzz-raw://8b0c0dc06781de57e85e5b13d59fe2e144dcea2347dd814f61d35878d71b57a5",
+				"dweb:/ipfs/QmdKdA9kDT8DcS1CfjewZMw1R39xYoFffwbyr4hbrHd74K"
 			]
 		}
 	},

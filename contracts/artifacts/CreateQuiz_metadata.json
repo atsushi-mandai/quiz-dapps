@@ -46,6 +46,54 @@
 			{
 				"inputs": [
 					{
+						"internalType": "string",
+						"name": "_question",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_choice1",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_choice2",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_choice3",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_choice4",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_hint",
+						"type": "string"
+					},
+					{
+						"internalType": "uint8",
+						"name": "_answer",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "_languageCode",
+						"type": "uint8"
+					}
+				],
+				"name": "_createQuiz",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "uint256",
 						"name": "_quizId",
 						"type": "uint256"
@@ -197,11 +245,11 @@
 			]
 		},
 		"contracts/CreateQuiz.sol": {
-			"keccak256": "0x671a9c82441d278f62af56d17234cf9a72fb5a38f99ca54a96028f9485933514",
+			"keccak256": "0x8604a802c1137190cfbfd04a84dbdd751f499120a3a5fa1a34b114c101c9b265",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://8d5b8e1314187dbbc9f9b167da85a360073b0c07377cb54d4ef8e0240f6d4d54",
-				"dweb:/ipfs/QmaEVh3b4tCLsnr4i2g2pxyWoMspAQkZvnGTc4bojM4MDZ"
+				"bzz-raw://c82ed0f1502ced156475382abce0c82afbca083e58ac4439e54f3283fdb530bc",
+				"dweb:/ipfs/QmXr1dyrHT4gcoC8R4eRPGGVFXW3tEryJ5pyKSo6vnbY97"
 			]
 		},
 		"contracts/Ownable.sol": {

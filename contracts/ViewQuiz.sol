@@ -14,11 +14,15 @@ contract ViewQuiz is CreateQuiz {
         string hint;
     }
 
+    //answerer shouldn't be able to see the answer
     function getQuizQuestion(uint _quizId) public view returns (QuizQuestion memory) {
         Quiz memory quiz = quizzes[_quizId];
         return QuizQuestion(quiz.question, quiz.choice1, quiz.choice2, quiz.choice3, quiz.choice4, quiz.hint);
     }
 
-
+    //owner could see the whole quiz
+    function getQuizForOwner(uint _quizId) public view returns (Quiz memory) {
+        return quizzes[_quizId];
+    } 
 
 }

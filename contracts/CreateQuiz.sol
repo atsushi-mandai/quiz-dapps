@@ -29,7 +29,7 @@ contract CreateQuiz is Ownable {
     }
 
     //@dev Create a Quiz. Will call this function from other functions.
-    function _createQuiz(string memory _question, string memory _choice1, string memory _choice2, string memory _choice3, string memory _choice4, string memory _hint, uint8 _answer, uint8 _languageCode) private {
+    function _createQuiz(string memory _question, string memory _choice1, string memory _choice2, string memory _choice3, string memory _choice4, string memory _hint, uint8 _answer, uint8 _languageCode) public {
         quizzes.push(Quiz(_question, _choice1, _choice2, _choice3, _choice4, _hint, _answer, _languageCode));
         uint id = quizzes.length - 1;
         quizOwner[id] = msg.sender;
