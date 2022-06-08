@@ -5,6 +5,8 @@ import "./CreateQuiz.sol";
 
 contract ViewQuiz is CreateQuiz {
 
+    event ReturnQuizQuestion(QuizQuestion quizQuestion);
+
     struct QuizQuestion {
         string question;
         string choice1;
@@ -25,11 +27,13 @@ contract ViewQuiz is CreateQuiz {
         return quizzes[_quizId];
     } 
 
-    function getRandomQuizQuestion(string memory _seed) public view returns (QuizQuestion memory) {
+    function getRandomQuizQuestion(string memory _seed) public returns (QuizQuestion memory) {
         uint storedBlockNumber = block.number + 1;
         uint rand = uint(keccak256(abi.encodePacked(_seed, blockhash(storedBlockNumber))));
         uint quizId = rand % quizzes.length;
-        return getQuizQuestion(quizId);
+        QuizQuestion memory quizQuestion = getQuizQuestion(quizId);
+        emit ReturnQuizQuestion(quizQuestion);
+        return quizQuestion;
     }
 
 }
