@@ -15,7 +15,7 @@ contract ViewQuiz is CreateQuiz {
     }
 
     //answerer shouldn't be able to see the answer
-    function getQuizQuestion(uint _quizId) public view returns (QuizQuestion memory) {
+    function getQuizQuestion(uint _quizId) private view returns (QuizQuestion memory) {
         Quiz memory quiz = quizzes[_quizId];
         return QuizQuestion(quiz.question, quiz.choice1, quiz.choice2, quiz.choice3, quiz.choice4, quiz.hint);
     }
@@ -24,5 +24,12 @@ contract ViewQuiz is CreateQuiz {
     function getQuizForOwner(uint _quizId) public view returns (Quiz memory) {
         return quizzes[_quizId];
     } 
+
+    function getRandomQuizQuestion(string memory _seed) public view returns (QuizQuestion memory) {
+        uint storedBlockNumber = block.number + 1;
+        uint rand = uint(keccak256(abi.encodePacked(_seed, blockhash(storedBlockNumber))));
+        uint quizId = rand % quizzes.length;
+        return getQuizQuestion(quizId);
+    }
 
 }
