@@ -82,7 +82,7 @@
 						"type": "uint256"
 					}
 				],
-				"name": "quizzIsActive",
+				"name": "quizIsActive",
 				"outputs": [
 					{
 						"internalType": "bool",
@@ -101,45 +101,33 @@
 						"type": "uint256"
 					}
 				],
-				"name": "quizzes",
+				"name": "quizOwner",
 				"outputs": [
 					{
-						"internalType": "string",
-						"name": "question",
-						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "choice1",
-						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "choice2",
-						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "choice3",
-						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "choice4",
-						"type": "string"
-					},
-					{
-						"internalType": "uint8",
-						"name": "answer",
-						"type": "uint8"
-					},
-					{
-						"internalType": "uint8",
-						"name": "languageCode",
-						"type": "uint8"
+						"internalType": "address",
+						"name": "",
+						"type": "address"
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_quizId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "_quizStatus",
+						"type": "bool"
+					}
+				],
+				"name": "quizOwnerChangeStatus",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -209,11 +197,11 @@
 			]
 		},
 		"contracts/CreateQuiz.sol": {
-			"keccak256": "0xd51d708b0e62ba384d59e7dcedb89268385723d5409c99e0fdc40bbf20681100",
+			"keccak256": "0x671a9c82441d278f62af56d17234cf9a72fb5a38f99ca54a96028f9485933514",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://cc07e80c025edc8f7e76e1a54a287170e424616dfe2a511206e1ca8e5e4e8520",
-				"dweb:/ipfs/QmRK3zPm14KDGtQpLa57QxKoBe6HgcYs3ejcMwdFH5hoG8"
+				"bzz-raw://8d5b8e1314187dbbc9f9b167da85a360073b0c07377cb54d4ef8e0240f6d4d54",
+				"dweb:/ipfs/QmaEVh3b4tCLsnr4i2g2pxyWoMspAQkZvnGTc4bojM4MDZ"
 			]
 		},
 		"contracts/Ownable.sol": {
