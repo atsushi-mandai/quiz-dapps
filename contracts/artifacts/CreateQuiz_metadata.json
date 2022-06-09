@@ -46,54 +46,6 @@
 			{
 				"inputs": [
 					{
-						"internalType": "string",
-						"name": "_question",
-						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "_choice1",
-						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "_choice2",
-						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "_choice3",
-						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "_choice4",
-						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "_hint",
-						"type": "string"
-					},
-					{
-						"internalType": "uint8",
-						"name": "_answer",
-						"type": "uint8"
-					},
-					{
-						"internalType": "uint8",
-						"name": "_languageCode",
-						"type": "uint8"
-					}
-				],
-				"name": "_createQuiz",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
 						"internalType": "uint256",
 						"name": "_quizId",
 						"type": "uint256"
@@ -158,6 +110,24 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_quizId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_hint",
+						"type": "string"
+					}
+				],
+				"name": "quizOwnerChangeHint",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -245,11 +215,11 @@
 			]
 		},
 		"contracts/CreateQuiz.sol": {
-			"keccak256": "0x8604a802c1137190cfbfd04a84dbdd751f499120a3a5fa1a34b114c101c9b265",
+			"keccak256": "0xfe4ae924f8aa2eb63a2fe13dded7bd72c560f9db1cede39c33640cf53503280d",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://c82ed0f1502ced156475382abce0c82afbca083e58ac4439e54f3283fdb530bc",
-				"dweb:/ipfs/QmXr1dyrHT4gcoC8R4eRPGGVFXW3tEryJ5pyKSo6vnbY97"
+				"bzz-raw://4cd724068eb749924f38a82d8933623f1857466fa7fcd3ead016486a6cb471c2",
+				"dweb:/ipfs/QmcgNp83WfPysBn4xLfstw5K6DPfESaMJPxmMav7kzAVce"
 			]
 		},
 		"contracts/Ownable.sol": {

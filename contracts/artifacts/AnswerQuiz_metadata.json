@@ -157,6 +157,24 @@
 						"type": "uint256"
 					},
 					{
+						"internalType": "uint8",
+						"name": "_answer",
+						"type": "uint8"
+					}
+				],
+				"name": "answerQuiz",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_quizId",
+						"type": "uint256"
+					},
+					{
 						"internalType": "bool",
 						"name": "_quizStatus",
 						"type": "bool"
@@ -415,7 +433,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/ViewQuiz.sol": "ViewQuiz"
+			"contracts/AnswerQuiz.sol": "AnswerQuiz"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -429,6 +447,14 @@
 		"remappings": []
 	},
 	"sources": {
+		"contracts/AnswerQuiz.sol": {
+			"keccak256": "0x27072a9f5e3e6656abb26e200526231e6ce6bbdd244d64d1a084d8f0aaf65367",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://6cfa08d84d9da96e12717537eff3caba0565cd160e5645d3565f55e24009d995",
+				"dweb:/ipfs/QmWeDBcji9EzHwXFykuMzTh6EJA2hSs7WB3uMakm2DfuhT"
+			]
+		},
 		"contracts/Context.sol": {
 			"keccak256": "0x2d9821ede311a3c16183811be8bdc666e88c69d9d50321e3dff025fe7630d373",
 			"license": "MIT",
