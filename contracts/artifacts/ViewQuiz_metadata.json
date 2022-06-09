@@ -454,11 +454,11 @@
 			]
 		},
 		"contracts/ViewQuiz.sol": {
-			"keccak256": "0x6db5f9319090b3a93cdb6149e220aa4a18b783ed2db336a9972db418301a7f30",
+			"keccak256": "0xd7db9de7fec516201ff5d98b874f2dae58e3ae80371f7e8fe756e2c1826d792e",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://15d0d1fde630f98a41f99981eb958ce7b9493366903ce79219cad5df69770017",
-				"dweb:/ipfs/QmZvwxMddYHjvksgVVXcWSLSUJGiczSitoqv1X5srLHEHV"
+				"bzz-raw://20c7344ddfa43e65726a9004235b0a38f8c955137e509de4387f26cefbe4c057",
+				"dweb:/ipfs/QmWWGLPsJDDGLsXHd2xUjeterMvRXsG9aoJaAEArR4SLvF"
 			]
 		}
 	},

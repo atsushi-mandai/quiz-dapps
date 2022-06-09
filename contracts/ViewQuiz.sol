@@ -18,6 +18,13 @@ contract ViewQuiz is CreateQuiz {
         return quiz;
     }
 
+    //for answerer to get a random quiz filtered by language
+    /* will write this later
+    function getRandomQuizByLanguage() public returns () {
+        // some function
+    }
+    */
+
     //owner should be able to see the quiz & answer for his/her quiz
     function quizOwnerGetQuiz(uint _quizId) public onlyQuizOwner(_quizId) returns (Quiz memory, uint8) {
         emit QuizOwnerGetQuiz(quizzes[_quizId], quizAnswer[_quizId]);
