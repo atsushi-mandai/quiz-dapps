@@ -5,26 +5,23 @@ import "./CreateQuiz.sol";
 
 contract ViewQuiz is CreateQuiz {
 
-    event ReturnQuizQuestion(QuizQuestion quizQuestion);
+    event GetQuiz(Quiz quiz);
+    event QuizOwnerGetQuiz(Quiz quiz, uint8 answer);
 
-    //answerer shouldn't be able to see the answer
-    function getQuizQuestion(uint _quizId) private view returns (QuizQuestion memory) {
-        Quiz memory quiz = quizzes[_quizId];
-        return QuizQuestion(quiz.question, quiz.choice1, quiz.choice2, quiz.choice3, quiz.choice4, quiz.hint);
-    }
-
-    //owner could see the whole quiz
-    function getQuizForOwner(uint _quizId) public view returns (Quiz memory) {
-        return quizzes[_quizId];
-    } 
-
-    function getRandomQuizQuestion(string memory _seed) public returns (QuizQuestion memory) {
+    //for answerer to get a random quiz
+    function getRandomQuiz(string memory _seed) public returns (Quiz memory) {
         uint storedBlockNumber = block.number + 1;
         uint rand = uint(keccak256(abi.encodePacked(_seed, blockhash(storedBlockNumber))));
         uint quizId = rand % quizzes.length;
-        QuizQuestion memory quizQuestion = getQuizQuestion(quizId);
-        emit ReturnQuizQuestion(quizQuestion);
-        return quizQuestion;
+        Quiz memory quiz = quizzes[quizId];
+        emit GetQuiz(quiz);
+        return quiz;
     }
+
+    //owner should be able to see the quiz & answer for his/her quiz
+    function quizOwnerGetQuiz(uint _quizId) public onlyQuizOwner(_quizId) returns (Quiz memory, uint8) {
+        emit QuizOwnerGetQuiz(quizzes[_quizId], quizAnswer[_quizId]);
+        return (quizzes[_quizId], quizAnswer[_quizId]);
+    } 
 
 }
