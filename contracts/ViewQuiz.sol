@@ -7,15 +7,6 @@ contract ViewQuiz is CreateQuiz {
 
     event ReturnQuizQuestion(QuizQuestion quizQuestion);
 
-    struct QuizQuestion {
-        string question;
-        string choice1;
-        string choice2;
-        string choice3;
-        string choice4;
-        string hint;
-    }
-
     //answerer shouldn't be able to see the answer
     function getQuizQuestion(uint _quizId) private view returns (QuizQuestion memory) {
         Quiz memory quiz = quizzes[_quizId];
