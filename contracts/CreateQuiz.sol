@@ -40,8 +40,11 @@ contract CreateQuiz is Ownable {
         emit NewQuiz(_question, _answer);
     }
 
+    //check & run _createQuiz function
     function createQuiz(string memory _question, string memory _choice1, string memory _choice2, string memory _choice3, string memory _choice4, string memory _hint, uint8 _answer, uint8 _languageCode, uint _reward, uint _rewardPool) public payable {
         require(msg.value == _rewardPool);
+        require(_rewardPool % _reward == 0);
+        require(_rewardPool > _reward);
         _createQuiz(_question, _choice1, _choice2, _choice3, _choice4, _hint, _answer, _languageCode, _reward, _rewardPool);
     }
 

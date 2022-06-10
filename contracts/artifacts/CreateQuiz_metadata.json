@@ -273,11 +273,11 @@
 			]
 		},
 		"contracts/CreateQuiz.sol": {
-			"keccak256": "0xff03781428c4c80294fb6b3f9a205ab6e28ec278956a11d36f88fe942199ee48",
+			"keccak256": "0xdf65536dc78bd55fc2cd1e8e4761b475f8312b3e391f297f08803b49b7836d27",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://e177a2fc43ab3c1dc168bc4974c6b0952ef2fb2271ba4ca3cf1ccc1efab48107",
-				"dweb:/ipfs/QmWMGuY285fVXWfB5QJ4V17rGLsiEC7AwiHRn1Tj3BqGWq"
+				"bzz-raw://0e8d55ac6194108f3df025c7766fceb0d0daf47312f5c61a23cf81d4330bdd0e",
+				"dweb:/ipfs/QmRCPfRB1LyBiwkWkgtYTYyjxYJLYKr9EFMUt54Ft6vcGH"
 			]
 		},
 		"contracts/Ownable.sol": {
