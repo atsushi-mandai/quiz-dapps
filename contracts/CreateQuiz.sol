@@ -40,12 +40,10 @@ contract CreateQuiz is Ownable {
         emit NewQuiz(_question, _answer);
     }
 
-    /* will write this later
-    function createQuiz() {
-        //some transactions here
-        //_createQuiz(){}
+    function createQuiz(string memory _question, string memory _choice1, string memory _choice2, string memory _choice3, string memory _choice4, string memory _hint, uint8 _answer, uint8 _languageCode, uint _reward, uint _rewardPool) public payable {
+        require(msg.value == _rewardPool);
+        _createQuiz(_question, _choice1, _choice2, _choice3, _choice4, _hint, _answer, _languageCode, _reward, _rewardPool);
     }
-    */
 
     //@dev Let quiz owner change the status of each quiz
     function quizOwnerChangeStatus(uint _quizId, bool _quizStatus) public onlyQuizOwner(_quizId) {
