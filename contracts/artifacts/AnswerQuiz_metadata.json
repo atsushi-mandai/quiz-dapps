@@ -44,6 +44,16 @@
 								"internalType": "uint8",
 								"name": "languageCode",
 								"type": "uint8"
+							},
+							{
+								"internalType": "uint256",
+								"name": "reward",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "rewardPool",
+								"type": "uint256"
 							}
 						],
 						"indexed": false,
@@ -132,6 +142,16 @@
 								"internalType": "uint8",
 								"name": "languageCode",
 								"type": "uint8"
+							},
+							{
+								"internalType": "uint256",
+								"name": "reward",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "rewardPool",
+								"type": "uint256"
 							}
 						],
 						"indexed": false,
@@ -231,6 +251,16 @@
 								"internalType": "uint8",
 								"name": "languageCode",
 								"type": "uint8"
+							},
+							{
+								"internalType": "uint256",
+								"name": "reward",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "rewardPool",
+								"type": "uint256"
 							}
 						],
 						"internalType": "struct CreateQuiz.Quiz",
@@ -374,6 +404,16 @@
 								"internalType": "uint8",
 								"name": "languageCode",
 								"type": "uint8"
+							},
+							{
+								"internalType": "uint256",
+								"name": "reward",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "rewardPool",
+								"type": "uint256"
 							}
 						],
 						"internalType": "struct CreateQuiz.Quiz",
@@ -448,11 +488,11 @@
 	},
 	"sources": {
 		"contracts/AnswerQuiz.sol": {
-			"keccak256": "0x27072a9f5e3e6656abb26e200526231e6ce6bbdd244d64d1a084d8f0aaf65367",
+			"keccak256": "0x344de6bc439fb960df3c5ca0918e9365d825c7e4e3a0e5ef76618608fdc63d9f",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://6cfa08d84d9da96e12717537eff3caba0565cd160e5645d3565f55e24009d995",
-				"dweb:/ipfs/QmWeDBcji9EzHwXFykuMzTh6EJA2hSs7WB3uMakm2DfuhT"
+				"bzz-raw://4c06f19fdf739bdde7b95af1964b7f741cd68b08abb46436d31db6d1f1ef1ff6",
+				"dweb:/ipfs/QmTahDvK5Q7Kicw3tSqYcQBPKG4vM5GnAFyLyJ7RSn7Hbm"
 			]
 		},
 		"contracts/Context.sol": {
@@ -464,11 +504,11 @@
 			]
 		},
 		"contracts/CreateQuiz.sol": {
-			"keccak256": "0xfe4ae924f8aa2eb63a2fe13dded7bd72c560f9db1cede39c33640cf53503280d",
+			"keccak256": "0x913d6efe724b639b291bae12c89ef71325b625f0548793e6c5dd16c148a2b6ed",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://4cd724068eb749924f38a82d8933623f1857466fa7fcd3ead016486a6cb471c2",
-				"dweb:/ipfs/QmcgNp83WfPysBn4xLfstw5K6DPfESaMJPxmMav7kzAVce"
+				"bzz-raw://2f3e64d8cea861aebca3bdf790014b8fb266476c63f000f7894b9901f71138fb",
+				"dweb:/ipfs/QmTKdjqdgcbfuFvPe5LVoWDMCi96nryLV4oMpe6QUrqiKZ"
 			]
 		},
 		"contracts/Ownable.sol": {
