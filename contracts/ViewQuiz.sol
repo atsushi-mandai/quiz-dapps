@@ -10,8 +10,7 @@ contract ViewQuiz is CreateQuiz {
 
     //for answerer to get a random quiz
     function getRandomQuiz(string memory _seed) public returns (Quiz memory) {
-        uint storedBlockNumber = block.number + 1;
-        uint rand = uint(keccak256(abi.encodePacked(_seed, blockhash(storedBlockNumber))));
+        uint rand = uint(keccak256(abi.encodePacked(_seed, block.timestamp, msg.sender)));
         uint quizId = rand % quizzes.length;
         Quiz memory quiz = quizzes[quizId];
         emit GetQuiz(quiz);

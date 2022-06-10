@@ -15,6 +15,8 @@ contract CreateQuiz is Ownable {
         string choice4;
         string hint;
         uint8 languageCode;
+        uint reward;
+        uint rewardPool;
     }
 
     Quiz[] internal quizzes;
@@ -29,8 +31,8 @@ contract CreateQuiz is Ownable {
     }
 
     //@dev Create a Quiz. Will call this function from other functions.
-    function _createQuiz(string memory _question, string memory _choice1, string memory _choice2, string memory _choice3, string memory _choice4, string memory _hint, uint8 _answer, uint8 _languageCode) private {
-        quizzes.push(Quiz(_question, _choice1, _choice2, _choice3, _choice4, _hint, _languageCode));
+    function _createQuiz(string memory _question, string memory _choice1, string memory _choice2, string memory _choice3, string memory _choice4, string memory _hint, uint8 _answer, uint8 _languageCode, uint _reward, uint _rewardPool) private {
+        quizzes.push(Quiz(_question, _choice1, _choice2, _choice3, _choice4, _hint, _languageCode, _reward, _rewardPool));
         uint id = quizzes.length - 1;
         quizAnswer[id] = _answer;
         quizOwner[id] = msg.sender;
@@ -38,12 +40,13 @@ contract CreateQuiz is Ownable {
         emit NewQuiz(_question, _answer);
     }
 
-    /* will write this later
-    function createQuiz() {
-        //some transactions here
-        //_createQuiz(){}
+    //check & run _createQuiz function
+    function createQuiz(string memory _question, string memory _choice1, string memory _choice2, string memory _choice3, string memory _choice4, string memory _hint, uint8 _answer, uint8 _languageCode, uint _reward, uint _rewardPool) public payable {
+        require(msg.value == _rewardPool);
+        require(_rewardPool % _reward == 0);
+        require(_rewardPool > _reward);
+        _createQuiz(_question, _choice1, _choice2, _choice3, _choice4, _hint, _answer, _languageCode, _reward, _rewardPool);
     }
-    */
 
     //@dev Let quiz owner change the status of each quiz
     function quizOwnerChangeStatus(uint _quizId, bool _quizStatus) public onlyQuizOwner(_quizId) {

@@ -44,6 +44,16 @@
 								"internalType": "uint8",
 								"name": "languageCode",
 								"type": "uint8"
+							},
+							{
+								"internalType": "uint256",
+								"name": "reward",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "rewardPool",
+								"type": "uint256"
 							}
 						],
 						"indexed": false,
@@ -132,6 +142,16 @@
 								"internalType": "uint8",
 								"name": "languageCode",
 								"type": "uint8"
+							},
+							{
+								"internalType": "uint256",
+								"name": "reward",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "rewardPool",
+								"type": "uint256"
 							}
 						],
 						"indexed": false,
@@ -148,6 +168,44 @@
 				],
 				"name": "QuizOwnerGetQuiz",
 				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "message",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "balance",
+						"type": "uint256"
+					}
+				],
+				"name": "Result",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "addressBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
 			},
 			{
 				"inputs": [
@@ -183,6 +241,64 @@
 				"name": "changeQuizStatus",
 				"outputs": [],
 				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_question",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_choice1",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_choice2",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_choice3",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_choice4",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_hint",
+						"type": "string"
+					},
+					{
+						"internalType": "uint8",
+						"name": "_answer",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "_languageCode",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_reward",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_rewardPool",
+						"type": "uint256"
+					}
+				],
+				"name": "createQuiz",
+				"outputs": [],
+				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
@@ -231,6 +347,16 @@
 								"internalType": "uint8",
 								"name": "languageCode",
 								"type": "uint8"
+							},
+							{
+								"internalType": "uint256",
+								"name": "reward",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "rewardPool",
+								"type": "uint256"
 							}
 						],
 						"internalType": "struct CreateQuiz.Quiz",
@@ -374,6 +500,16 @@
 								"internalType": "uint8",
 								"name": "languageCode",
 								"type": "uint8"
+							},
+							{
+								"internalType": "uint256",
+								"name": "reward",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "rewardPool",
+								"type": "uint256"
 							}
 						],
 						"internalType": "struct CreateQuiz.Quiz",
@@ -448,11 +584,11 @@
 	},
 	"sources": {
 		"contracts/AnswerQuiz.sol": {
-			"keccak256": "0x27072a9f5e3e6656abb26e200526231e6ce6bbdd244d64d1a084d8f0aaf65367",
+			"keccak256": "0x92cbe0c999c54fa4acb24596f2ace6217fd229f04bb75f1a987008fa7430f69a",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://6cfa08d84d9da96e12717537eff3caba0565cd160e5645d3565f55e24009d995",
-				"dweb:/ipfs/QmWeDBcji9EzHwXFykuMzTh6EJA2hSs7WB3uMakm2DfuhT"
+				"bzz-raw://b59913d0e85505ec9d33fbd0883093d115f878590a35a26d293eb3ebc0543b3b",
+				"dweb:/ipfs/QmSvUKr5M2Qf14iWxXKWS1Fp6R7sXHEfERTkgbG6dXRGyw"
 			]
 		},
 		"contracts/Context.sol": {
@@ -464,11 +600,11 @@
 			]
 		},
 		"contracts/CreateQuiz.sol": {
-			"keccak256": "0xfe4ae924f8aa2eb63a2fe13dded7bd72c560f9db1cede39c33640cf53503280d",
+			"keccak256": "0xdf65536dc78bd55fc2cd1e8e4761b475f8312b3e391f297f08803b49b7836d27",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://4cd724068eb749924f38a82d8933623f1857466fa7fcd3ead016486a6cb471c2",
-				"dweb:/ipfs/QmcgNp83WfPysBn4xLfstw5K6DPfESaMJPxmMav7kzAVce"
+				"bzz-raw://0e8d55ac6194108f3df025c7766fceb0d0daf47312f5c61a23cf81d4330bdd0e",
+				"dweb:/ipfs/QmRCPfRB1LyBiwkWkgtYTYyjxYJLYKr9EFMUt54Ft6vcGH"
 			]
 		},
 		"contracts/Ownable.sol": {
@@ -480,11 +616,11 @@
 			]
 		},
 		"contracts/ViewQuiz.sol": {
-			"keccak256": "0xd7db9de7fec516201ff5d98b874f2dae58e3ae80371f7e8fe756e2c1826d792e",
+			"keccak256": "0x0dd7cfb3e66e0137a6257f5fcf4ffce528fed3d420102a5a04904700ac633761",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://20c7344ddfa43e65726a9004235b0a38f8c955137e509de4387f26cefbe4c057",
-				"dweb:/ipfs/QmWWGLPsJDDGLsXHd2xUjeterMvRXsG9aoJaAEArR4SLvF"
+				"bzz-raw://a433289f9cd0d1c7669ba32c29971bb65028bf6116ad22c57e8e88b848ec2a38",
+				"dweb:/ipfs/QmQZZyYhEjnkCK1o44QKAeDVgHFdHQ1nmTXiLDVzCzZ96b"
 			]
 		}
 	},
