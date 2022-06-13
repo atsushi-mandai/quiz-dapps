@@ -466,7 +466,7 @@
 						"type": "uint8"
 					}
 				],
-				"stateMutability": "nonpayable",
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -552,11 +552,11 @@
 			]
 		},
 		"contracts/ViewQuiz.sol": {
-			"keccak256": "0x6d139b182c44aa7666569f0fdce7501008151d6de0d2a06c95560f6a611f099b",
+			"keccak256": "0xd027589511716dfb1d2deb4e8e4751cd14db5c7c2a3c21ed5dc91854ed5f825e",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://8476518d384808f5f301a96a7488d2f6768ab72bb203623e168dee382f0b9762",
-				"dweb:/ipfs/QmQFFNPH7UuqWtFEwwHvRii291WhYu4jZSf1PyMDXjnW9S"
+				"bzz-raw://7008b59a962f912e4250de5a87dd2dad6ff55c0c39ea845f4bb5c312316e2035",
+				"dweb:/ipfs/QmQoxaUH9dfRCxa4VQdVNnrkWSBPveTUjpejWoWcD66oxi"
 			]
 		}
 	},

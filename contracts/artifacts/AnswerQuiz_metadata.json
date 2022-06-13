@@ -228,6 +228,25 @@
 			{
 				"inputs": [
 					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "answerReadyTime",
+				"outputs": [
+					{
+						"internalType": "uint32",
+						"name": "",
+						"type": "uint32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "uint256",
 						"name": "_quizId",
 						"type": "uint256"
@@ -364,7 +383,7 @@
 						"type": "tuple"
 					}
 				],
-				"stateMutability": "nonpayable",
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -522,7 +541,7 @@
 						"type": "uint8"
 					}
 				],
-				"stateMutability": "nonpayable",
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -584,11 +603,11 @@
 	},
 	"sources": {
 		"contracts/AnswerQuiz.sol": {
-			"keccak256": "0x92cbe0c999c54fa4acb24596f2ace6217fd229f04bb75f1a987008fa7430f69a",
+			"keccak256": "0x2ea915dd639f6c49e06c37d6c7799ef8d6fe119d5b05aa16922b9f5e5b7124ee",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://b59913d0e85505ec9d33fbd0883093d115f878590a35a26d293eb3ebc0543b3b",
-				"dweb:/ipfs/QmSvUKr5M2Qf14iWxXKWS1Fp6R7sXHEfERTkgbG6dXRGyw"
+				"bzz-raw://2fb763b34a32c6f14e6d8c5224046071b973898ea7d13edc7ea1c69e2a1ee293",
+				"dweb:/ipfs/QmTAyvbwyHDsm998Wx8WMhpyWBW1zaQxQcaptqbYs1qxA1"
 			]
 		},
 		"contracts/Context.sol": {
@@ -616,11 +635,11 @@
 			]
 		},
 		"contracts/ViewQuiz.sol": {
-			"keccak256": "0x0dd7cfb3e66e0137a6257f5fcf4ffce528fed3d420102a5a04904700ac633761",
+			"keccak256": "0xd027589511716dfb1d2deb4e8e4751cd14db5c7c2a3c21ed5dc91854ed5f825e",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://a433289f9cd0d1c7669ba32c29971bb65028bf6116ad22c57e8e88b848ec2a38",
-				"dweb:/ipfs/QmQZZyYhEjnkCK1o44QKAeDVgHFdHQ1nmTXiLDVzCzZ96b"
+				"bzz-raw://7008b59a962f912e4250de5a87dd2dad6ff55c0c39ea845f4bb5c312316e2035",
+				"dweb:/ipfs/QmQoxaUH9dfRCxa4VQdVNnrkWSBPveTUjpejWoWcD66oxi"
 			]
 		}
 	},

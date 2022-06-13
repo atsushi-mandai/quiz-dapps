@@ -33,8 +33,8 @@ contract ViewQuiz is CreateQuiz {
     */
 
     //owner should be able to see the quiz & answer for his/her quiz
-    function quizOwnerGetQuiz(uint _quizId) public onlyQuizOwner(_quizId) returns (Quiz memory, uint8) {
-        emit QuizOwnerGetQuiz(quizzes[_quizId], quizAnswer[_quizId]);
+    function quizOwnerGetQuiz(uint _quizId) public view onlyQuizOwner(_quizId) returns (Quiz memory, uint8) {
+        //emit QuizOwnerGetQuiz(quizzes[_quizId], quizAnswer[_quizId]);
         return (quizzes[_quizId], quizAnswer[_quizId]);
     } 
 
