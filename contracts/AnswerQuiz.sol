@@ -47,4 +47,10 @@ contract AnswerQuiz is ViewQuiz {
         }
         _triggerCooldown(msg.sender);
     }
+
+    function withdrawReward() public {
+        require(addressBalance[msg.sender] > 0 ether);
+        payable(msg.sender).transfer(addressBalance[msg.sender]);
+        addressBalance[msg.sender] = 0 ether;
+	}
 }

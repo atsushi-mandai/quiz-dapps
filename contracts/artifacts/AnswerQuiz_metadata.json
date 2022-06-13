@@ -563,6 +563,13 @@
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdrawReward",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -603,11 +610,11 @@
 	},
 	"sources": {
 		"contracts/AnswerQuiz.sol": {
-			"keccak256": "0x2ea915dd639f6c49e06c37d6c7799ef8d6fe119d5b05aa16922b9f5e5b7124ee",
+			"keccak256": "0x2a77a433166c4f0197209413594ce711e74a30b3a2dbe835d57642dca2656252",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://2fb763b34a32c6f14e6d8c5224046071b973898ea7d13edc7ea1c69e2a1ee293",
-				"dweb:/ipfs/QmTAyvbwyHDsm998Wx8WMhpyWBW1zaQxQcaptqbYs1qxA1"
+				"bzz-raw://ca39f8185b69476faeced7c2874f60a6878514bbeea3b8f744de4b9bd76e392a",
+				"dweb:/ipfs/QmTa9yaUUCNzjLJvBujQM1W8evMvBBXwxD1nheQASvBg5T"
 			]
 		},
 		"contracts/Context.sol": {
