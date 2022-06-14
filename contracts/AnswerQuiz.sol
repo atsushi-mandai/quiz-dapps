@@ -49,7 +49,7 @@ contract AnswerQuiz is ViewQuiz {
     }
 
     function withdrawReward() public {
-        require(addressBalance[msg.sender] > 0 ether);
+        //require(addressBalance[msg.sender] > 0 ether);
         payable(msg.sender).transfer(addressBalance[msg.sender]);
         addressBalance[msg.sender] = 0 ether;
 	}
