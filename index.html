@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>quiz-dapps Rinkeby</title>
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+    <script language="javascript" type="text/javascript" src="quizdapps_abi.js"></script>
+</head>
+<body>
+    <script type="text/javascript">	
+    var quizDapps;
+    import ABI from "./quizdapps_abi.js"
+    var abi = ABI.abi
+
+    function startApp() {
+        var address = "0x9aE35bd7332BE461cb9C3B6ab1900105562c5dB3";
+        contract = web3js.eth.contract(abi).at(address);
+        var accountInterval = setInterval(function() {
+            // Check if account has changed
+            if (web3.eth.accounts[0] !== userAccount) {
+                userAccount = web3.eth.accounts[0];
+                // Call a function to update the UI with the new account
+            }
+        }, 100);
+    }
+
+    function getZombieDetails(id) {
+        return contract.methods.createQuiz(id).call();
+    }
+
+    //Metamask
+    window.addEventListener('load', function() {
+        // Web3がブラウザにインジェクトされているかチェック (Mist/MetaMask)
+        if (typeof web3 !== 'undefined') {
+            web3js = new Web3(web3.currentProvider);
+            console.log("injecting web3js success");
+        } else {
+            console.log("Can NOT access to provider...");
+            window.alert("MetaMaskにアクセスできません");
+            return;
+        }
+
+    // start the app
+    startApp()
+    })
+    </script>
+</body>
+</html>
