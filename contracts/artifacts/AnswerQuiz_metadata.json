@@ -321,13 +321,7 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "_seed",
-						"type": "string"
-					}
-				],
+				"inputs": [],
 				"name": "getRandomQuiz",
 				"outputs": [
 					{
@@ -610,11 +604,11 @@
 	},
 	"sources": {
 		"contracts/AnswerQuiz.sol": {
-			"keccak256": "0xe2697e5444b5cad84c10c8ab403b74ec18552f28c8f7b9a6e333775e09188e93",
+			"keccak256": "0x2a77a433166c4f0197209413594ce711e74a30b3a2dbe835d57642dca2656252",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://427d4235b773ebfa4cdba5d01fb49f1573c60712398bc11ed57c995ee198bb22",
-				"dweb:/ipfs/QmZ3jQLsKGu9w3UCAs7SosG1Ur7xwT1g6yYVdomUtZpGbm"
+				"bzz-raw://ca39f8185b69476faeced7c2874f60a6878514bbeea3b8f744de4b9bd76e392a",
+				"dweb:/ipfs/QmTa9yaUUCNzjLJvBujQM1W8evMvBBXwxD1nheQASvBg5T"
 			]
 		},
 		"contracts/Context.sol": {
@@ -642,11 +636,11 @@
 			]
 		},
 		"contracts/ViewQuiz.sol": {
-			"keccak256": "0xd027589511716dfb1d2deb4e8e4751cd14db5c7c2a3c21ed5dc91854ed5f825e",
+			"keccak256": "0x48fc814cb16b3c93b111ba04eed7be76a6916873a9242d36b517a9f149dfbed8",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://7008b59a962f912e4250de5a87dd2dad6ff55c0c39ea845f4bb5c312316e2035",
-				"dweb:/ipfs/QmQoxaUH9dfRCxa4VQdVNnrkWSBPveTUjpejWoWcD66oxi"
+				"bzz-raw://05769c93636a4f0ce880b1ab6f64c5c2e357badaf90fc56af9a17ba0d791a228",
+				"dweb:/ipfs/QmTXp4Sh59NvFSMWMxbvVFhiTby6jEeJfU3gutad5pi1KQ"
 			]
 		}
 	},
