@@ -9,8 +9,8 @@ contract ViewQuiz is CreateQuiz {
     event QuizOwnerGetQuiz(Quiz quiz, uint8 answer);
 
     //for answerer to get an active random quiz
-    function getRandomQuiz(string memory _seed) public view returns (Quiz memory) {
-        uint[] memory quizIds;
+    function getRandomQuiz() public view returns (Quiz memory) {
+        uint[] memory quizIds = new uint[](quizzes.length);
         uint counter = 0;
         for (uint i = 0; i < quizzes.length; i++) {
             if(quizIsActive[i] == true) {
@@ -18,7 +18,7 @@ contract ViewQuiz is CreateQuiz {
                 counter++;
             }
         }
-        uint rand = uint(keccak256(abi.encodePacked(_seed, block.timestamp, msg.sender))) % quizIds.length;
+        uint rand = uint(keccak256(abi.encodePacked(block.timestamp, msg.sender))) % quizIds.length;
         uint quizId = quizIds[rand];
         Quiz memory quiz = quizzes[quizId];
         //emit GetQuiz(quiz);

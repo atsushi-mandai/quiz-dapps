@@ -246,13 +246,7 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "_seed",
-						"type": "string"
-					}
-				],
+				"inputs": [],
 				"name": "getRandomQuiz",
 				"outputs": [
 					{
@@ -552,11 +546,11 @@
 			]
 		},
 		"contracts/ViewQuiz.sol": {
-			"keccak256": "0xd027589511716dfb1d2deb4e8e4751cd14db5c7c2a3c21ed5dc91854ed5f825e",
+			"keccak256": "0x8b148851b602d865f1f4ccb8a2765f05cc760eaad29ecb038247f9aee05c0b0b",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://7008b59a962f912e4250de5a87dd2dad6ff55c0c39ea845f4bb5c312316e2035",
-				"dweb:/ipfs/QmQoxaUH9dfRCxa4VQdVNnrkWSBPveTUjpejWoWcD66oxi"
+				"bzz-raw://50e4b3214423fc52021aa42a127d27ed5f7beca10f69041c0a58dd5e544048e7",
+				"dweb:/ipfs/QmVSe5YCRLjnJTAmrgd35kX1A82xreZhiweS4FbESZEb3Q"
 			]
 		}
 	},
